@@ -23,7 +23,7 @@
   - [ifstream](http://www.cplusplus.com/reference/fstream/ifstream/) :  a stream class to read from files
   - [fstream](http://www.cplusplus.com/reference/fstream/fstream/) :  a stream class to both read and write from/to files.
 
-## File processing order of operations
+## order of operations
 
 ![alt](images/file.png)
 
