@@ -23,6 +23,10 @@
   - [ifstream](http://www.cplusplus.com/reference/fstream/ifstream/) :  a stream class to read from files
   - [fstream](http://www.cplusplus.com/reference/fstream/fstream/) :  a stream class to both read and write from/to files.
 
+## File processing :  order of operations
+
+![alt](images/file.png)
+
 ## Opening a file
 - To open a file we need to create a file object of the correct type.
 - Once this is done we use the open method to see if the file can be accessed.
