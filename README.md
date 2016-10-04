@@ -155,7 +155,7 @@ DEPENDPATH=include
 ```
 - this can be seen in the demo program [here](https://github.com/NCCA/FilesAndParsing/tree/master/BoostSerialization)
 
-# Positioning a stream
+## Positioning a stream
 - There are several functions which allow the programmer to move the current position of the file stream. 
 - These are as follows
   - [seekg](http://www.cplusplus.com/reference/istream/istream/seekg/) and [seekp])http://www.cplusplus.com/reference/ostream/ostream/seekp/. allow us to move to a position in the stream
