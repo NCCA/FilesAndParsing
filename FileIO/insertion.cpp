@@ -28,11 +28,11 @@ int main(int argc, char *argv[])
 	double d=0.23232323299;
 	std::string s("hello file transfer");
 
-	fileOut<<a<<std::endl;
-	fileOut<<b<<std::endl;
-	fileOut<<c<<std::endl;
-	fileOut<<(double)d<<std::endl;
-	fileOut<<s<<std::endl;
+	fileOut<<a<<'\n';
+	fileOut<<b<<'\n';
+	fileOut<<c<<'\n';
+	fileOut<<(double)d<<'\n';;
+	fileOut<<s<<'\n';;
 
 	fileOut.close();
 	return EXIT_SUCCESS;

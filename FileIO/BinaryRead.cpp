@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <cstdlib>
+#include <array>
 
 
 
@@ -26,16 +27,16 @@ int main(int argc, char *argv[])
 	fileIn.open(argv[1],std::ios::in | std::ios::binary);
 	if (!fileIn.is_open())
 	{
-	std::cout <<"File : "<<argv[1]<<" Not found Exiting \n";
-	exit(EXIT_FAILURE);
+		std::cout <<"File : "<<argv[1]<<" Not found Exiting \n";
+		exit(EXIT_FAILURE);
 	}
 
-	Point p[100];
-	fileIn.read(reinterpret_cast <char *>(p),sizeof(Point)*100);
+	std::array<Point,10> points;
+	fileIn.read(reinterpret_cast <char *>(&points[0]),sizeof(Point)*points.size());
 
-	for(int i=0; i<100; ++i)
+	for(auto p : points)
 	{
-		std::cout <<"["<<p[i].m_x<<","<<p[i].m_y<<","<<p[i].m_z<<"]\n";
+		std::cout <<'['<<p.m_x<<','<<p.m_y<<','<<p.m_z<<"]\n";
 	}
 
 	fileIn.close();

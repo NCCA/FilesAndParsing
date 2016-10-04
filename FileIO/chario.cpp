@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	// check to see if we can open the file
 	if (!FileIn.is_open())
 	{
-		std::cerr <<"Could not open File : "<<argv[1]<<" for writing "<<std::endl;
+		std::cerr <<"Could not open File : "<<argv[1]<<" for writing \n";
 		exit(EXIT_FAILURE);
 	}
 	char data;
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		FileIn.get(data);
 		std::cout <<data;
 	}
-	std::cout<<std::endl;
+	std::cout<<'\n';
 	FileIn.close();
 	return EXIT_SUCCESS;
 }

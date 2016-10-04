@@ -16,13 +16,13 @@ fileOut.open(argv[1]);
 // check to see if we can open the file
 if (!fileOut.is_open())
 {
-	std::cerr <<"Could not open File : "<<argv[1]<<" for writing "<<std::endl;
+	std::cerr <<"Could not open File : "<<argv[1]<<" for writing \n";
 	exit(EXIT_FAILURE);
 }
 
 for (int i=0; i<10; ++i)
 {
-	fileOut << "Line number is "<<i<<endl;
+	fileOut << "Line number is "<<i<<'\n';
 }
 fileOut.close();
 return EXIT_SUCCESS;

@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	// check to see if we can open the file
 	if (!fileIn.is_open())
 	{
-		std::cerr <<"Could not open File : "<<argv[1]<<" for reading "<<"\n";
+		std::cerr <<"Could not open File : "<<argv[1]<<" for reading \n";
 		exit(EXIT_FAILURE);
 	}
 
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 	fileIn>>s;
 
 	fileIn.close();
-	std::cout << a<<"\n"<<b<<"\n"<<c<<"\n"<<d<<"\n"<<s<<"\n";
+	std::cout << a<<'\n'<<b<<'\n'<<c<<'\n'<<d<<'\n'<<s<<'\n';
 
 	return EXIT_SUCCESS;
 }

@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <cstdlib>
+#include <array>
 
 
 class Point
@@ -29,15 +30,17 @@ int main(int argc, char *argv[])
 		exit(EXIT_FAILURE);
 	}
 
-	Point p[10];
-
-	for(int i=0; i<10; ++i)
+	std::array<Point ,10>points;
+	int i=0;
+	for(auto &p : points)
 	{
-		p[i].m_x=i; p[i].m_y=i; p[i].m_z=i;
+		p.m_x=i; 
+		p.m_y=i; 
+		p.m_z=i;
+		++i;
 	}
 
-	fileOut.write(reinterpret_cast <char *>(p),sizeof(Point)*10);
-
+	fileOut.write(reinterpret_cast<char *>(&points[0].m_x) ,sizeof(Point)*points.size());
 	fileOut.close();
 	return EXIT_SUCCESS;
 }

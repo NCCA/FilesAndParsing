@@ -21,11 +21,11 @@ int main(int argc, char *argv[])
 	}
 
 	std::string lineBuffer;
-	unsigned long int lineNumber=1;
+	unsigned  int lineNumber=1;
 	while(!fileIn.eof())
 	{
 		getline(fileIn,lineBuffer,'\n');
-		std::cout <<lineNumber<<" : "<<lineBuffer<<std::endl;
+		std::cout <<lineNumber<<" : "<<lineBuffer<<'\n';
 		++lineNumber;
 	}
 	fileIn.close();
