@@ -1,0 +1,11 @@
+Colour	1.0 0.0 0.2
+Translate		     -1 0 0
+Rotate 45 0 1 0
+
+							Sphere 1.0 12 12
+	Colour 0.0 0.2 0.3
+	Translate 2 0 0
+	Cube 1.0
+
+// comments and nonsense
+
